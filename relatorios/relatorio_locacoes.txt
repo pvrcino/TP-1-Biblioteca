@@ -1,0 +1,16 @@
+Nome do Cliente: Arthur Oliveira Purcino
+Título do Livro: Harry Potter and the Order of the Phoenix (Harry Potter  #5)
+ID do Livro: 2
+(V) Data de Locação: 19/8/2021
+(V) Data de Devolução: 19/8/2021
+Valor total: 0.00
+Atrasado: não
+
+Nome do Cliente: Arthur Oliveira Purcino
+Título do Livro: Harry Potter and the Half-Blood Prince (Harry Potter  #6)
+ID do Livro: 1
+(V) Data de Locação: 25/8/2021
+(X) Data de Devolução: 4/9/2021
+Valor total: 6520.00
+Atrasado: não
+
