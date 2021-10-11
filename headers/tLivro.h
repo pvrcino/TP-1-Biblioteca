@@ -32,7 +32,7 @@ int getAnoLivro(tLivro* t);
 int getLocacoesQnt(tLivro* livro);
 int getUnidades(tLivro* livro);
 void adicionarLivroFile(tLivro* livro);
-char *  itoa ( int value, char * str );
+// char *  itoa ( int value, char * str );
 void usuario_CadastrarLivro();
 int getId(tLivro* t);
 void adicionarLocacoes(tLivro* livro, int units);

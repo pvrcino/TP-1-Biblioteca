@@ -133,27 +133,27 @@ tLivro* cadastrar_livro(int id, char titulo[], tAutor* autores[], tEditora* edit
   return livro;
 }
 //função que converte int para string
-char *itoa ( int value, char * str ){
-    char temp;
-    int i =0;
-    while (value > 0) {
-      int digito = value % 10;
+// char *itoa ( int value, char * str ){
+//     char temp;
+//     int i =0;
+//     while (value > 0) {
+//       int digito = value % 10;
 
-        str[i] = digito + '0';
-        value /= 10;
-        i++;
-    }
-   i = 0;
-   int j = strlen(str) - 1;
-   while (i < j) {
-      temp = str[i];
-      str[i] = str[j];
-      str[j] = temp;
-      i++;
-      j--;
-   }
-    return str;
-}
+//         str[i] = digito + '0';
+//         value /= 10;
+//         i++;
+//     }
+//    i = 0;
+//    int j = strlen(str) - 1;
+//    while (i < j) {
+//       temp = str[i];
+//       str[i] = str[j];
+//       str[j] = temp;
+//       i++;
+//       j--;
+//    }
+//     return str;
+// }
 
 //função que atualiza o arquivo "books_-_books.csv" toda vez que um livro é cadastrado.
 void adicionarLivroFile(tLivro* livro) {
@@ -174,7 +174,7 @@ void adicionarLivroFile(tLivro* livro) {
     autor = autoraux;
   }
     
-  itoa(livro->ano, aux);
+  itoa(livro->ano, "%d", aux);
   strcat(data, aux);
   fprintf(temp, "%d,%s,%s,%s,%.2lf,%s,%s,%d\n", livro->id, livro->titulo, aux_autores, "5.00", livro->valor, data, getNomeEditora(livro->editora), getUnidades(livro));
 
