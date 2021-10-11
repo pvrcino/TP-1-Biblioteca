@@ -174,7 +174,7 @@ void adicionarLivroFile(tLivro* livro) {
     autor = autoraux;
   }
     
-  itoa(livro->ano, "%d", aux);
+  itoa(livro->ano, aux, 10);
   strcat(data, aux);
   fprintf(temp, "%d,%s,%s,%s,%.2lf,%s,%s,%d\n", livro->id, livro->titulo, aux_autores, "5.00", livro->valor, data, getNomeEditora(livro->editora), getUnidades(livro));
 
